@@ -1,0 +1,252 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+//header
+.goods{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.goods__title{
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 29px;
+}
+//goods
+.goods__inner-items{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    font-family: 'Trebuchet_MS', sans-serif;
+    max-width: 320px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    .item__box{
+        cursor: pointer;
+    }
+    .item__box-top{
+        display: flex;
+        height: 46px;
+        .item__text{
+            width: 278px;
+            background-color: #f2f2f2;
+            border: 4px solid $blue;
+            border-top-right-radius: 11px;
+            border-left: none;
+            border-bottom: none;
+            padding-top: 24px;
+            padding-left: 5px;
+            font-size: 16px;
+            color: $text;
+            outline: none;
+            height: 47px;
+            
+        }
+        .item-triangle{
+            position: relative;
+            width: 46px;
+            height: 47px;
+            background: linear-gradient(-45deg, #f2f2f2, #f2f2f2 30.5px, #1698d9 0, #1698d9 34px, transparent 0);
+        }
+    }
+    .item__box-bottom{
+        width: 320px;
+        min-height: 435px;
+        background-color: #f2f2f2;
+        border: 4px solid $blue;
+        border-top: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-top: 10px;
+        padding-left: 48px;
+        padding-right: 48px;
+        position: relative;
+        overflow: hidden;
+        .item__title{
+            font-size: 48px;
+            color: #000;
+            font-weight: 700;
+            &-little{
+                font-size: 24px;
+            }
+        }
+        .item__text-little{
+            font-size: 14px;
+            padding-top: 15px;
+            line-height: 17px;
+            color: $text;
+        }
+        .item__weight{
+            display: block;
+            background-color: $blue;
+            text-align: center;
+            border-radius: 50%;
+            width: 81px;
+            height: 81px;
+            padding-top: 10px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            p{
+                font-size: 42px;
+                color: #fff;
+                margin: 0;
+                line-height: 44px;
+            }
+            span{
+                color: #fff;
+                font-size: 21px;
+            }
+        }
+        img{
+            width: 116%;
+            height: 82%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            position: absolute;
+            bottom: -108px;
+            left: -24px;
+        }
+    }
+    .item__signature{
+        text-align: center;
+        font-size: 13px;
+        color: #fff;
+        margin-top: 16px;
+        cursor: default;
+        a{
+            color: $blue;
+            cursor: pointer;
+        }
+    }
+    .item__signature-buy{
+        display: none;
+    }
+    .item__signature-blocked{
+        display: none;
+    }
+    &.blocked{
+        .item__box{
+            cursor: default;
+            .item__box-top{
+                .item__text{
+                    color: #d4d4d4;
+                    border: 4px $blocked solid;
+                    border-top-right-radius: 11px;
+                    border-left: none;
+                    border-bottom: none;
+                }
+                .item-triangle{
+                    position: relative;
+                    width: 46px;
+                    height: 47px;
+                    background: linear-gradient(-45deg, #f2f2f2, #f2f2f2 30.5px, $blocked 0, $blocked 34px, transparent 0);
+                }
+            }
+            .item__box-bottom{
+                border: 4px solid $blocked;
+                border-top: none;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                overflow: hidden;
+                .item__title{
+                    color: #d4d4d4;;
+                    &-little{
+                        font-size: 24px;
+                    }
+                }
+                .item__text-little{
+                    color: #d4d4d4;
+                }
+                .item__weight{
+                    background-color: $blocked;
+                }
+                img{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .item__signature{
+            display: none;
+        }
+        .item__signature-blocked{
+            display: block;
+            color: #ffff66;
+            font-size: 13px;
+            text-align: center;
+            margin-top: 16px;
+            cursor: default;
+        }
+    }
+    &.active{
+        .item__box-top{
+            .item__text{
+                border: 4px $pink solid;
+                border-top-right-radius: 11px;
+                border-left: none;
+                border-bottom: none;
+            }
+            .item-triangle{
+                position: relative;
+                width: 46px;
+                height: 47px;
+                background: linear-gradient(-45deg, #f2f2f2, #f2f2f2 30.5px, $pink 0, $pink 34px, transparent 0);
+            }
+        }
+        .item__box-bottom{
+            border: 4px solid $pink;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;
+            .item__weight{
+                background-color: $pink; 
+            }
+        }
+        .item__signature{
+            display: none;
+        }
+        .item__signature-buy{
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            color: #fff;
+            margin-top: 16px;
+            cursor: default;
+        }
+    }
+    &.blocked.active{
+        .item__signature-buy{
+            display: none;
+        }
+    }
+}
+body .e{
+    background-color: transparent;
+}
+.wrapper{
+    position: relative;
+    .block1{
+        position: absolute;
+        width: 500px;
+        height: 100px;
+        background-color: #f0f0f0;
+        left: 50px;
+    }
+    .block2{
+        position: absolute;
+        width: 500px;
+        height: 100px;
+        background-color: #f0f0f0;
+        left: 50px;
+        top: 100px;
+    }
+}
+
+@import 'media'

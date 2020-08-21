@@ -1,0 +1,25 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5) ), url(../images/content/background70x70.jpg);
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
