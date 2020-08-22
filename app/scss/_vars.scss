@@ -1,4 +1,10 @@
-$text : #666666;
-$blue : #1698d9;
-$blocked: #b3b3b3;
-$pink: #d91667;
+$text: #333333;
+
+@mixin f700 {
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-weight: 700;
+}
+@mixin f750 {
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: 700;
+}
