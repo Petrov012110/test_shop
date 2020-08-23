@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
+        <div class="header__wrapper">
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
@@ -40,8 +42,10 @@
                 </div>
             </div>
         </div>
+    </div>
     </header>
     <section class="product">
+        <div class="showcase__block">
         <div class="container">
             <div class="product__wrapper">
                 <div class="product__box">
@@ -137,6 +141,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <section class="brand">
         <div class="container">
@@ -159,10 +164,166 @@
         </div>
     </section>
     <section class="showcase">
-        <div class="container">
-            <div class="showcase__wrapper">
-                
+        <div class="showcase__block">       
+            <div class="container">
+                <div class="showcase__wrapper">
+                    <div class="showcase__box">
+                        <div class="showcase__title">
+                            <span>Our Showcase</span>
+                        </div>
+                        <div class="showcase__menu">
+                            <div class="showcase__inner-btn">
+                                <button type="button" data-filter=".category-fashion" data-text="Fashion">Fashion</button>   
+                                <button type="button" data-filter=".category-furnitures" data-text="Furnitures">Furnitures</button>
+                                <button type="button" data-filter=".category-watches" data-text="Watches">Watches</button>
+                                <button type="button" data-filter=".category-mobile" data-text="">Mobile</button>
+                                <button type="button" data-filter=".category-cloth" data-text="">Cloth</button>
+                                <button type="button" data-filter=".category-toys" data-text="">Toys</button>
+                            </div>
+                        </div>
+                            <div class="showcase__inner-items">
+                                <div class="product__item mix category-toys category-fashion category-watches" data-order="1">
+                                    <div class="product__item-header">
+                                        <div class="product__item-header__likes">253</div>
+                                        <a class="product__item-header__chat" href="#">120</a> 
+                                    </div>
+                                    <div class="product__item-content">
+                                        <div class="product__item-content__img">
+                                            <a href="#" style="background-image: url(images/content/watch.jpg);" ></a>
+                                        </div>
+                                        <div class="product__item-content__name">Fashion Genuine Chain Watch</div>
+                                        <div class="product__item-content__price">$ 25.20</div>
+                                        <button class="product__item-content__btn">Add to Cart</button>
+                                    </div>   
+                                </div>
+                                <div class="product__item mix category-fashion category-furnitures category-watches" data-order="2">
+                                    <div class="product__item-header">
+                                        <div class="product__item-header__likes">253</div>
+                                        <a class="product__item-header__chat" href="#">120</a> 
+                                    </div>
+                                    <div class="product__item-content">
+                                        <div class="product__item-content__img">
+                                            <a href="#" style="background-image: url(images/content/watch6.jpg);" ></a>
+                                        </div>
+                                        <div class="product__item-content__name">Fashion Silver Chain Watch</div>
+                                        <div class="product__item-content__price">$ 25.20</div>
+                                        <button class="product__item-content__btn">Add to Cart</button>
+                                    </div>   
+                                </div>
+                                <div class="product__item mix category-watches" data-order="3">
+                                    <div class="product__item-header">
+                                        <div class="product__item-header__likes">253</div>
+                                        <a class="product__item-header__chat" href="#">120</a> 
+                                    </div>
+                                    <div class="product__item-content">
+                                        <div class="product__item-content__img">
+                                            <a href="#" style="background-image: url(images/content/watch2.jpg);" ></a>
+                                        </div>
+                                        <div class="product__item-content__name">Fashion Chain Watch</div>
+                                        <div class="product__item-content__price">$ 25.20</div>
+                                        <button class="product__item-content__btn">Add to Cart</button>
+                                    </div>   
+                                </div>
+                                <div class="product__item mix category-mobile category-fashion category-watches" data-order="4">
+                                    <div class="product__item-header">
+                                        <div class="product__item-header__likes">253</div>
+                                        <a class="product__item-header__chat" href="#">120</a> 
+                                    </div>
+                                    <div class="product__item-content">
+                                        <div class="product__item-content__img">
+                                            <a href="#" style="background-image: url(images/content/watch3.jpg);" ></a>
+                                        </div>
+                                        <div class="product__item-content__name"> Fashion Black Chain Watch</div>
+                                        <div class="product__item-content__price">$ 25.20</div>
+                                        <button class="product__item-content__btn">Add to Cart</button>
+                                    </div>   
+                                </div>
+                                <div class="product__item mix category-cloth category-mobile category-watches" data-order="5">
+                                    <div class="product__item-header">
+                                        <div class="product__item-header__likes">253</div>
+                                        <a class="product__item-header__chat" href="#">120</a> 
+                                    </div>
+                                    <div class="product__item-content">
+                                        <div class="product__item-content__img">
+                                            <a href="#" style="background-image: url(images/content/watch4.jpg);" ></a>
+                                        </div>
+                                        <div class="product__item-content__name"> Fashion Lether  Watch</div>
+                                        <div class="product__item-content__price">$ 25.20</div>
+                                        <button class="product__item-content__btn">Add to Cart</button>
+                                    </div>   
+                                </div>
+                                <div class="product__item mix category-toys category-mobile category-watches" data-order="6">
+                                    <div class="product__item-header">
+                                        <div class="product__item-header__likes">253</div>
+                                        <a class="product__item-header__chat" href="#">120</a> 
+                                    </div>
+                                    <div class="product__item-content">
+                                        <div class="product__item-content__img">
+                                            <a href="#" style="background-image: url(images/content/watch5.jpg);" ></a>
+                                        </div>
+                                        <div class="product__item-content__name">Fashion Forign Watch</div>
+                                        <div class="product__item-content__price">$ 25.20</div>
+                                        <button class="product__item-content__btn">Add to Cart</button>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="newsletter__background">
+            <div class="container">
+                <div class="newsletter__background-title">get notified</div>
+                <div class="newsletter__inner">
+                    <div class="newsletter__title">Newsletter</div>
+                    <form>
+                        <input class="newsletter__input" type="text" placeholder="Enter your email address..." required>
+                        <button class="search" type="submit" >
+                            Subbmit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="shop">
+        <div class="container">
+            <div class="shop__wrapper">
+                <div class="shop__inner">
+                    <div class="shop__inner-title">Big Shop</div>
+                    <nav class="shop__inner-nav">
+                        <ul>
+                            <li><a href="#">Man</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Toys</a></li>
+                        </ul>                                             
+                    </nav>
+                    <div class="shop__inner-social">
+                        <ul>
+                            <li><a class="facebook" href="#"></a></li>
+                            <li><a class="google" href="#"></a></li>
+                            <li><a class="instagram" href="#"></a></li>
+                            <li><a class="twitter" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <div class="container">
+            <div class="copyright__wrapper">
+                <div class="copyright__text">
+                    © Copyright 2017. Big Shop by Victor Themes 
+                </div>
+            </div>
+
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

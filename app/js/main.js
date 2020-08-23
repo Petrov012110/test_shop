@@ -3,4 +3,7 @@ $(function(){
         e.preventDefault();
         $(this).toggleClass('active');
       })
+
+    var mixer = mixitup('.showcase__inner-items');
+
 });
